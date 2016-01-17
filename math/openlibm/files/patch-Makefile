@@ -1,8 +1,11 @@
 --- Makefile.orig	2014-12-01 13:10:35 UTC
 +++ Makefile
-@@ -55,13 +55,13 @@ install: all openlibm.pc
+@@ -53,15 +53,15 @@ openlibm.pc: openlibm.pc.in Make.inc Mak
+ 
+ install: all openlibm.pc
  	mkdir -p $(DESTDIR)$(shlibdir)
- 	mkdir -p $(DESTDIR)$(libdir)/pkgconfig
+-	mkdir -p $(DESTDIR)$(libdir)/pkgconfig
++	mkdir -p $(DESTDIR)$(libdatadir)/pkgconfig
  	mkdir -p $(DESTDIR)$(includedir)/openlibm
 -	cp -a libopenlibm.$(SHLIB_EXT)* $(DESTDIR)$(shlibdir)/
 -	cp -a libopenlibm.a $(DESTDIR)$(libdir)/
