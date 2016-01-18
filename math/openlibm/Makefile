@@ -27,4 +27,6 @@ PLIST_SUB+=	EXTRA_HEADER=""
 PLIST_SUB+=	EXTRA_HEADER="@comment "
 .endif
 
+TEST_TARGET=	check
+
 .include <bsd.port.post.mk>
