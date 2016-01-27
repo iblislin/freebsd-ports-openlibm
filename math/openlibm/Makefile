@@ -10,6 +10,10 @@ MASTER_SITES=	GH
 MAINTAINER=	iblis@hs.ntnu.edu.tw
 COMMENT=	High quality system independent, portable, open source libm
 
+LICENSE=	MIT ISCL BSD2CLAUSE
+LICENSE_COMB=	multi
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	JuliaLang
 GH_PROJECT=	openlibm
