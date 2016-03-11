@@ -1,17 +1,5 @@
 --- Makefile.orig	2014-12-01 13:10:35 UTC
 +++ Makefile
-@@ -24,9 +24,9 @@ OBJS =  $(patsubst %.f,%.f.o,\
- 	$(patsubst %.S,%.S.o,\
- 	$(patsubst %.c,%.c.o,$(filter-out $(addprefix src/,$(DUPLICATE_SRCS)),$(SRCS)))))
- 
--all: libopenlibm.a libopenlibm.$(SHLIB_EXT) 
-+all: libopenlibm.a libopenlibm.$(SHLIB_EXT)
- 	$(MAKE) -C test
--libopenlibm.a: $(OBJS)  
-+libopenlibm.a: $(OBJS)
- 	$(AR) -rcs libopenlibm.a $(OBJS)
- libopenlibm.$(SHLIB_EXT): $(OBJS)
- ifeq ($(OS),WINNT)
 @@ -37,6 +37,16 @@ else
  	@-ln -sf libopenlibm.$(SHLIB_EXT).$(SOMAJOR).$(SOMINOR) libopenlibm.$(SHLIB_EXT)
  endif

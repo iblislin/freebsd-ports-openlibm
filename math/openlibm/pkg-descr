@@ -1,5 +1,5 @@
 OpenLibm is an effort to have a high quality, portable, standalone C
-mathematical library (libm). It can be used standalone in applications and 
+mathematical library (libm). It can be used standalone in applications and
 programming language implementations.
 
 The project was born out of a need to have a good libm for the Julia
@@ -7,4 +7,3 @@ programming langage that worked consistently across compilers and operating
 systems, and in 32-bit and 64-bit environments.
 
 WWW: http://julialang.org/openlibm/
-WWW: https://github.com/julialang/openlibm
